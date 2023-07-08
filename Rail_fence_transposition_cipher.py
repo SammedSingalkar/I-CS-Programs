@@ -76,13 +76,14 @@ def decryptRailFence(cipher, key):
 	return("".join(result))
 
 if __name__ == "__main__":
-	print(encryptRailFence("attack at once", 2))
-	print(encryptRailFence("GeeksforGeeks ", 3))
-	print(encryptRailFence("defend the east wall", 3))
+	# print(encryptRailFence("GeeksforGeeks ", 3))
+    # print(decryptRailFence("GsGsekfrek eoe", 3))
+	n =  input("Enter the message to be encyped:")
+	Encrypted_Message = encryptRailFence(n,2)
+	print("Encrypted Message is",Encrypted_Message)
+	Decrypted_Message = decryptRailFence(Encrypted_Message, 2)
+	print("Decrypted Message is",Decrypted_Message)
 	
-	print(decryptRailFence("GsGsekfrek eoe", 3))
-	print(decryptRailFence("atc toctaka ne", 2))
-	print(decryptRailFence("dnhaweedtees alf tl", 3))
+	
 
-# This code is contributed
-# by Pratik Somwanshi
+
